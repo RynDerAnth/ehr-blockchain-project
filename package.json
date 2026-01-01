@@ -1,0 +1,25 @@
+{
+  "name": "ehr-blockchain-project",
+  "version": "1.0.0",
+  "description": "Sistem Manajemen Hak Akses Rekam Medis Elektronik (EHR) berbasis Blockchain menggunakan **Hardhat**, **Next.js**, dan **Smart Contracts (Solidity)**. Proyek ini memungkinkan Pasien memiliki kontrol penuh atas siapa yang dapat mengakses data medis mereka, serta mencatat setiap akses secara transparan di Blockchain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RynDerAnth/ehr-blockchain-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RynDerAnth/ehr-blockchain-project/issues"
+  },
+  "homepage": "https://github.com/RynDerAnth/ehr-blockchain-project#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.28.0"
+  }
+}
