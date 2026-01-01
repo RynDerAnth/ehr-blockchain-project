@@ -136,7 +136,7 @@ Agar browser bisa berkomunikasi dengan blockchain lokal, Anda perlu mengatur Met
 
 4. Tempel Private Key -> Klik **Import**.
 
-> ⚠️ **PENTING: Mengatasi Error "Nonce too high" / JSON-RPC Error** 
+> ⚠️ **PENTING: Mengatasi Error "Nonce too high" / JSON-RPC Error:** 
 > Setiap kali Anda me-restart npx hardhat node, history blockchain akan terhapus, tetapi MetaMask masih mengingat history lama.
 > Jika transaksi gagal, lakukan ini:
 >
@@ -176,7 +176,7 @@ Agar browser bisa berkomunikasi dengan blockchain lokal, Anda perlu mengatur Met
 
 3. Klik Cek Akses & Data. Data akan muncul jika izin valid.
 
-## 📂 Struktur Folder
+## 📂 Struktur Folder Utama
 
 ```bash
 ehr-blockchain-project/
