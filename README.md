@@ -73,7 +73,7 @@ npx hardhat run scripts/seed_dummy_data.js --network localhost
 ```
 
 
-Setelah perintah ini selesai, **salin Address Contract** yang muncul di terminal (Contoh: `0x5FbDB...`).
+Setelah perintah ini selesai, **salin Address Contract** yang muncul di terminal (Contract Deployed at: `0x5FbDB...`).
 
 ### 4. Setup Frontend
 
