@@ -132,49 +132,65 @@ Agar browser bisa berkomunikasi dengan blockchain lokal, Anda perlu mengatur Met
 
     - Jangan salin Address-nya, tapi Private Key-nya.
 
-3. Di MetaMask: Klik ikon Profil (bulat) -> **Import Account**.
+3. Di MetaMask: Klik ikon Profil (bulat) -> Add wallet -> **Import an account**.
 
 4. Tempel Private Key -> Klik **Import**.
 
 > ⚠️ **PENTING: Mengatasi Error "Nonce too high" / JSON-RPC Error:** 
 > Setiap kali Anda me-restart npx hardhat node, history blockchain akan terhapus, tetapi MetaMask masih mengingat history lama.
-> Jika transaksi gagal, lakukan ini:
+> **Jika transaksi gagal, lakukan ini:**
 >
 > 1. Buka MetaMask -> Settings.
 >
 > 2. Masuk ke Advanced.
 >
-> 3. Klik Clear activity tab data (Ini hanya mereset history transaksi lokal, saldo aman).
+> 3. Klik Clear activity tab data (Ini hanya me-reset history transaksi lokal, saldo tidak berubah).
 
 ## 🧪 Cara Menggunakan Aplikasi
 
 ### Skenario 1: Dokter Input Data
 
-1. Login MetaMask menggunakan Akun Dokter (misal Account #0).
+1. Login MetaMask menggunakan **Akun Dokter** (misal Account #0).
 
-2. Di Web, masuk tab Portal Dokter.
+2. Di Web, masuk tab Portal Dokter -> Sub-menu 📝 **Input Data Baru**.
 
-3. Isi Address Pasien, Tipe Penyakit, dan CID.
+3. Isi Address Pasien, Tipe Penyakit, dan CID (Hash File IPFS).
 
-4. Klik Submit & Konfirmasi di MetaMask.
+4. Klik **Submit ke Blockchain** & Konfirmasi di MetaMask.
 
 ### Skenario 2: Pasien Memberi Akses
 
-1. Login MetaMask menggunakan Akun Pasien (misal Account #1).
+1. Login MetaMask menggunakan **Akun Pasien** (misal Account #1).
 
 2. Di Web, masuk tab Portal Pasien.
 
-3. Masukkan ID Record (misal: 1) dan Address Dokter tujuan.
+3. Lihat daftar 📂 **Rekam Medis Saya** di sebelah kiri. Klik tombol Pilih pada salah satu record.
 
-4. Klik Berikan Izin & Konfirmasi.
+4. ID Record akan otomatis terisi. Masukkan Address Dokter Tujuan.
 
-### Skenario 3: Dokter Melihat Data
+5. Pilih durasi izin (misal: 1 Jam).
 
-1. Login kembali sebagai Dokter.
+6. Klik **Berikan Izin Akses** & Konfirmasi.
 
-2. Di tab Portal Dokter (bawah), masukkan ID Record.
+### Skenario 3: Dokter Melihat Data (Inbox Otomatis)
 
-3. Klik Cek Akses & Data. Data akan muncul jika izin valid.
+1. Login kembali sebagai Dokter (Akun yang diberi izin).
+
+2. Di tab Portal Dokter, masuk ke sub-menu 📥 **Inbox Medis (Shared)**.
+
+3. Klik tombol Refresh jika data belum muncul.
+
+4. Sistem akan memindai blockchain dan menampilkan daftar rekam medis yang dibagikan ke Anda.
+
+5. Klik salah satu item di daftar kiri untuk melihat detail file (CID/Tipe) dan status kepemilikan.
+
+### Skenario 4: Dokter Mencari Data Manual
+
+1. Masih di Portal Dokter, masuk ke sub-menu 🔍 **Cari Pasien**.
+
+2. Masukkan Address Wallet Pasien.
+
+3. Sistem akan menampilkan semua ID Record milik pasien tersebut beserta status akses Anda (✅ **Akses Diberikan** atau ⛔ **Akses Ditolak**).
 
 ## 📂 Struktur Folder Utama
 
@@ -189,3 +205,5 @@ ehr-blockchain-project/
 └── hardhat.config.js   # Konfigurasi Blockchain
 ```
 
+## 📄 Lisensi
+Project ini dibuat untuk keperluan Tugas Besar Pengembangan Aplikasi Rantai Blok.
